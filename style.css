@@ -584,107 +584,7 @@ textarea{
     resize: none;
 }
 
-@media only screen and (max-width: 550px){
-    .container{
-        width:90%;
-    }
-    .header{
-        width: 100%;
-    }
-    .half1{
-        padding: 2% 1%;
-    }
-    .half1 h1{
-        font-size: 45px;
-    }
-    .half1 h2{
-        font-size: 30px;
-    }
-    .half1 h3{
-        font-size: 15px;
-    }
-    .fancyText{
-        display: none;
-    }
-    .coffee{
-        display: none;
-    }
-    .navbar{
-        height: fit-content;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: absolute;
-        flex-direction: column;
-        font-size: 15px;
-        text-align: center;
-    }
-    .useful{
-        display: none;
-    }
-    .contactbar .title{
-        font-size: 20px;
-    }
-    .buttons{
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-    .buttons *{
-        margin: 2% 0;
-        font-size: .8rem;
-        width: 100%;
-        height: 100%;;
-    }
-    .buttons p{
-        align-self: center;
-        margin: auto 0;
-        padding-top: 2%;
-    }
-    #tbold{
-        font-size: 20px;
-    }
-    .aboutme .box{
-        flex-direction: column;
-    }
-    .aboutme p {
-        font-size: 15px;
-    }
-    .box hr{
-        border-bottom: #2C88CB;
-        width: 100%;
-    }
-    .skills{
-        flex-direction: column;
-    }
-    .skillbox{
-        margin: 2% 5%;
-        width: 90%;
-    }
-    .portfolio{
-        grid-template-columns: 1fr;
-    }
-    #contac{
-        flex-direction: column-reverse;
-    }
-    /* #contac *{
-        margin: 5% auto;
-    } */
-    .informations{
-        width: 100%;
-    }
-    .informations p{
-        font-size: 15px;
-    }
-    .contactbox h2{
-        font-size: 20px;
-    }
-    input::placeholder,
-    #message::placeholder {
-        font-size: 15px;
-    }
-}
+
 @media only screen and (max-width: 750px){ 
     .container {
         width: 90%;
@@ -852,5 +752,133 @@ textarea{
 @media only screen and (max-width: 987px){
     #atext {
         font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .half1 {
+        padding: 2% 1%;
+    }
+
+    .half1 h1 {
+        font-size: 45px;
+    }
+
+    .half1 h2 {
+        font-size: 30px;
+    }
+
+    .half1 h3 {
+        font-size: 15px;
+    }
+
+    .fancyText {
+        display: none;
+    }
+
+    .coffee {
+        display: none;
+    }
+
+    .navbar {
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        flex-direction: column;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .useful {
+        display: none;
+    }
+
+    .contactbar .title {
+        font-size: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .buttons * {
+        margin: 2% 0;
+        font-size: .8rem;
+        width: 100%;
+        height: 100%;
+        ;
+    }
+
+    .buttons p {
+        align-self: center;
+        margin: auto 0;
+        padding-top: 2%;
+    }
+
+    #tbold {
+        font-size: 20px;
+    }
+
+    .aboutme .box {
+        flex-direction: column;
+    }
+
+    .aboutme p {
+        font-size: 15px;
+    }
+
+    .box hr {
+        border-bottom: #2C88CB;
+        width: 100%;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skillbox {
+        margin: 2% 5%;
+        width: 90%;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    #contac {
+        flex-direction: column-reverse;
+    }
+
+    /* #contac *{
+        margin: 5% auto;
+    } */
+    .informations {
+        width: 100%;
+    }
+
+    .informations p {
+        font-size: 15px;
+    }
+
+    .contactbox h2 {
+        font-size: 20px;
+    }
+
+    input::placeholder,
+    #message::placeholder {
+        font-size: 15px;
     }
 }
