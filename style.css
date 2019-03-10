@@ -167,10 +167,13 @@ header{
     border-radius: 50%;
     font-size: 25px;
     mix-blend-mode: normal;
-    
+    transition: transform .2s ease-in-out;
 
 }
-.fa-facebook-f{
+.fab:hover{
+    transform: rotateZ(50deg) scale(1.1);
+}
+.socials .fa-facebook-f{
     padding: 5px 10px;
 }
 .coffee {
@@ -237,9 +240,9 @@ header{
     justify-content: center;
     /* height: min-content; */
     margin: 2%;
-
-
+    
 }
+
 .buttons p{
     margin:2%;
     padding: 0 25%;
@@ -256,7 +259,8 @@ header{
     text-align: center;
     color: #FFFFFF;
     padding: .5% 0%;
-    margin-right: 1%;
+    margin-right: 2.5%;
+    transition: transform .2s ease-in-out;
     
 }
 .checkcv{
@@ -271,6 +275,12 @@ header{
     text-align: center;
     color: #2C88CB;
     padding: 0%;
+    margin-left: 2.5%;
+    transition: transform .2s ease-in-out;
+}
+.contactme:hover,
+.checkcv:hover {
+    transform: scale(1.05);
 }
 .main{
     margin: 0 auto;
