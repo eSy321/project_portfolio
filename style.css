@@ -574,7 +574,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     padding: 2% 4%;
-    transition: transform .2 ease-in;
+    transition: transform .2s ease-in;
     margin: 2% 10% 0 0;
 }
 input[type=submit]:hover {
