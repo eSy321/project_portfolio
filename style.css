@@ -196,12 +196,13 @@ header{
     position: absolute;
     display: inline-block;
     top: 45%;
-    left: 30%;
+    left: 35%;
     justify-content: center;
     transform: rotate(45deg) skewX(45deg);
-    width: 100%;
+    width: 70%;
     height: max-content;
     color: rgb(6, 108, 180);
+
 }
 .fancyText *{
     display: inline-block;
@@ -214,17 +215,13 @@ header{
     letter-spacing: 0.02em;
     padding:0;
     transform: skewX(-45deg) rotate(-45deg);
-    /* border: 5px solid black; */
 }
-/* .fancyText br{
-
-} */
 .contactbar{
     display: flex;
     flex-direction: column;
     align-content: center;
 }
-.title{
+.contactbar h3 {
     font-weight: normal;
     line-height: normal;
     font-size: 36px;
@@ -238,7 +235,6 @@ header{
     height: fit-content;
     align-self: center;
     justify-content: center;
-    /* height: min-content; */
     margin: 2%;
     
 }
@@ -289,7 +285,8 @@ header{
     grid-template-columns: repeat(3,1fr);
     width: 100%;
 }
-#tbold{
+.tbold,
+.main h3{
     grid-column: 1/-1;
     margin: 0 auto;
     padding: 2%;
@@ -457,7 +454,7 @@ header{
     padding: 0;
       
 }
-#atext {
+.atext {
     position: absolute;
     font-style: normal;
     font-weight: bold;
@@ -495,7 +492,7 @@ header{
     opacity: 0.6;
 
 }
-#atext:hover{
+.atext:hover{
     opacity: 1;
 }
 
@@ -539,6 +536,9 @@ header{
 .contactbox *{
     padding-left: 5%;
 }
+.contactbox:nth-last-child(2){
+    padding-left: 0;
+}
 .contactbox h2{
     font-weight: bold;
     line-height: normal;
@@ -546,8 +546,7 @@ header{
     letter-spacing: 0.02em;
     color: #2C88CB;
 }
-input[type=text],
-#message {
+input[type=text] {
     width: 80%;
     margin-top: 5%;
     border: none;
@@ -557,7 +556,7 @@ input[type=text],
 
 }
 input::placeholder,
-#message::placeholder{
+textarea::placeholder{
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
@@ -565,6 +564,15 @@ input::placeholder,
     font-size: 18px;
     color: #A0A0A0;
     padding-bottom: 0;
+    text-align: left;
+}
+textarea{
+    width: 80%;
+    margin-top: 5%;
+    border: none;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #2C88CB;
+    padding-left: 0;
 }
 input[type=submit] {
     margin-top:2%;
@@ -589,6 +597,7 @@ footer{
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #A0A0A0;
+    width:100%;
 }
 textarea{
     resize: none;
@@ -645,8 +654,13 @@ textarea{
         display: none;
     }
 
-    .contactbar .title {
+    .contactbar h3 {
+        font-weight: normal;
+        line-height: normal;
         font-size: 20px;
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .buttons {
@@ -670,7 +684,7 @@ textarea{
         padding-top: 2%;
     }
 
-    #tbold {
+    .tbold {
         font-size: 20px;
     }
 
@@ -700,9 +714,6 @@ textarea{
         grid-template-columns: 1fr 1fr;
     }
 
-    #contac:not(input[type=submit]) * {
-        margin: 5% auto;
-    }
     .contactbox{
         margin-bottom: 0%;
         padding-bottom: 5%;
@@ -721,7 +732,7 @@ textarea{
     }
 
     input::placeholder,
-    #message::placeholder {
+    textarea::placeholder {
         font-size: 15px;
     }
     input[type=submit]{
@@ -760,7 +771,7 @@ textarea{
     }
 }
 @media only screen and (max-width: 987px){
-    #atext {
+    .atext {
         font-size: 3vw;
     }
 }
@@ -813,8 +824,13 @@ textarea{
         display: none;
     }
 
-    .contactbar .title {
+    .contactbar h3 {
+        font-weight: normal;
+        line-height: normal;
         font-size: 20px;
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .buttons {
@@ -838,7 +854,7 @@ textarea{
         padding-top: 2%;
     }
 
-    #tbold {
+    .tbold {
         font-size: 20px;
     }
 
@@ -868,13 +884,10 @@ textarea{
         grid-template-columns: 1fr;
     }
 
-    #contac {
+    .contact {
         flex-direction: column-reverse;
     }
 
-    /* #contac *{
-        margin: 5% auto;
-    } */
     .informations {
         width: 100%;
     }
@@ -888,7 +901,7 @@ textarea{
     }
 
     input::placeholder,
-    #message::placeholder {
+    textarea::placeholder {
         font-size: 15px;
     }
 }
