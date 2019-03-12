@@ -413,7 +413,6 @@ header{
     width: 100%;
     height: 100%;
 }
-
 .photo>h3 {
     padding-top: 2%;
     padding-left: 5%;
@@ -454,7 +453,7 @@ header{
     padding: 0;
       
 }
-.atext {
+.photobox .atext {
     position: absolute;
     font-style: normal;
     font-weight: bold;
@@ -566,7 +565,7 @@ textarea::placeholder{
     padding-bottom: 0;
     text-align: left;
 }
-textarea{
+.contactbox textarea{
     width: 80%;
     margin-top: 5%;
     border: none;
