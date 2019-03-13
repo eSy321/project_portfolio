@@ -328,6 +328,9 @@ header{
     width: 100%;
     line-height: 31px;
 }
+strong {
+    font-weight: bold;
+}
 .box2{
     width: 100%;
 }
