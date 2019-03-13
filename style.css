@@ -220,6 +220,7 @@ header{
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-top: .5%;
 }
 .contactbar h3 {
     font-weight: normal;
