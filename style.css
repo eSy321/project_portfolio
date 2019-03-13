@@ -230,48 +230,35 @@ header{
     margin-bottom: 0;
 }
 .buttons{
+    padding: 1%;
+    position: relative;
     display: flex;
-    width: fit-content;
-    height: fit-content;
-    align-self: center;
     justify-content: center;
-    margin: 2%;
-    
 }
-
+.buttons a{
+    padding: 1% 2.5%;
+}
 .buttons p{
-    margin:2%;
-    padding: 0 25%;
-}
-.contactme{
-    height: 100%;
-    width: fit-content;
-    background: #FDC32F;
     border-radius: 50px;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     font-size: 1rem;
     text-align: center;
+
+}
+.contactme{
+    background: #FDC32F;
+    border-radius: 50px;
     color: #FFFFFF;
-    padding: .5% 0%;
-    margin-right: 2.5%;
     transition: transform .2s ease-in-out;
     
 }
 .checkcv{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #2C88CB;
-    border-radius: 50px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 1rem;
-    text-align: center;
-    color: #2C88CB;
-    padding: 0%;
     margin-left: 2.5%;
+    border-radius: 50px;
+    border: 1px solid #2C88CB;
+    color: #2C88CB;
     transition: transform .2s ease-in-out;
 }
 .contactme:hover,
@@ -605,7 +592,24 @@ textarea{
     resize: none;
 }
 
+@media only screen and (max-width:1060px) {
+    .fancyText {
+        display: none;
+    }
 
+    .half2 {
+        align-content: center;
+    }
+
+    .navbar {
+        height: 50%;
+        margin: auto;
+        padding: 0;
+        flex-direction: column;
+        font-size: 15px;
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 750px){ 
     .container {
         width: 90%;
@@ -642,10 +646,10 @@ textarea{
     }
 
     .navbar {
-        height: fit-content;
-        margin: 0;
+        top: 5%;
+        height: 80%;
+        margin: auto;
         padding: 0;
-        overflow: hidden;
         position: absolute;
         flex-direction: column;
         font-size: 15px;
@@ -664,26 +668,22 @@ textarea{
         padding-bottom: 0;
         margin-bottom: 0;
     }
-
+    .buttons a{
+        margin: 1% auto;
+    }
     .buttons {
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
+        padding: 0 auto;
     }
 
     .buttons * {
         margin: 2% 0;
         font-size: .8rem;
-        width: 100%;
-        height: 100%;
-        ;
+        width: 45%;
     }
 
     .buttons p {
-        align-self: center;
-        margin: auto 0;
-        padding-top: 2%;
+        margin: auto;
     }
 
     .tbold {
@@ -751,22 +751,7 @@ textarea{
         display: inline;
     }
 }
-@media only screen and (max-width:1060px){
-    .fancyText{
-        display: none;
-    }
-    .half2{
-        align-content: center;
-    }
-    .navbar {
-        height: fit-content;
-        margin: 5% 0;
-        padding: 0;
-        flex-direction: column;
-        font-size: 15px;
-        text-align: center;
-    }
-}
+
 @media only screen and (max-width:796px){
     .informations p {
         font-size: 15px;
@@ -812,8 +797,9 @@ textarea{
     }
 
     .navbar {
-        height: fit-content;
-        margin: 0;
+        top: 5%;
+        height: 80%;
+        margin: auto;
         padding: 0;
         overflow: hidden;
         position: absolute;
@@ -835,26 +821,6 @@ textarea{
         margin-bottom: 0;
     }
 
-    .buttons {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-
-    .buttons * {
-        margin: 2% 0;
-        font-size: .8rem;
-        width: 100%;
-        height: 100%;
-        ;
-    }
-
-    .buttons p {
-        align-self: center;
-        margin: auto 0;
-        padding-top: 2%;
-    }
 
     .tbold {
         font-size: 20px;
